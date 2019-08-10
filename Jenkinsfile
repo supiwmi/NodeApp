@@ -33,7 +33,7 @@ node {
     }
     stage('Run Container on Jenkins Server') {
         
-    	sh 'docker run -d --name my-app supiwmi/nodeapp'
+    	sh 'docker run -d supiwmi/nodeapp'
     }
 
 }
