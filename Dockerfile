@@ -1,5 +1,4 @@
 # use a node base image
-# Web Hook Trigger to Jenkins
 FROM node:7-onbuild
 
 # set maintainer
