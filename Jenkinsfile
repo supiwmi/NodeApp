@@ -31,4 +31,9 @@ node {
             } 
                 echo "Trying to Push Docker Build to DockerHub"
     }
+    stage('Run Container on Jenkins Server') {
+        
+    	sh 'docker run -d --name my-app -p 8888:8888 supiwmi/nodeapp'
+    }
+
 }
