@@ -1,5 +1,4 @@
 # use a node base image
-# test webhook
 FROM node:7-onbuild
 
 # set maintainer
