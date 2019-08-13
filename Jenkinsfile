@@ -25,7 +25,7 @@ node {
 			You would need to first register with DockerHub before you can push images to your account
 			Don't forget to change the credential'docker-hub' in the lide below to your credential id in Jenkins
 		*/
-        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+        docker.withRegistry('https://registry.hub.docker.com', 'sup-dockerhub') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
             } 
